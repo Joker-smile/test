@@ -15,7 +15,6 @@ class PaymentController extends Controller
     public function payByAlipay()
     {
         $order_number = time();
-dd('{"gmt_create":"2019-03-06 17:23:46","charset":"GBK","gmt_payment":"2019-03-06 17:23:55","notify_time":"2019-03-06 17:23:55","subject":"支付 Laravel Shop 的订单：1551864200","sign":"AHrTmgnfjRVyYNtB4+AGs6HStx2lBCVJV8hAzPAp/0e/nT5ylgyczFLRSBtdh1uhUeuujCRjcC3KghJYOikUDqhgGwLBq8/aOc2yf5Ru8EPfuKCK9B+wQOQBvmVa180Iivh513nfKbgndpkH8e/V7Z8BxRkNJDWlk0OWG7/2YJtz5rDAS30PK6ItDn5e9dXuOG8Cw6Wq5kAHk14fQdkKdpwIbH0jbtoqCOeZQP54XyLYVpk88MSbUdeldDGwEtqNmOwhKFmrbDONXShlw7CM1EZmm/Pxv7JKeKz6SU+2sQ5UcmL25G6Y4MsOUNW34WSPpzWwFOOT0WcGxSfUwADcog==","buyer_id":"2088102177667610","invoice_amount":"100.00","version":"1.0","notify_id":"9af733e2c58739103c6da856c9c5cf8kpl","fund_bill_list":"[{\"amount\":\"100.00\",\"fundChannel\":\"ALIPAYACCOUNT\"}]","notify_type":"trade_status_sync","out_trade_no":"1551864200","total_amount":"100.00","trade_status":"TRADE_SUCCESS","trade_no":"2019030622001467610500701553","auth_app_id":"2016082000295641","receipt_amount":"100.00","point_amount":"0.00","app_id":"2016082000295641","buyer_pay_amount":"100.00","sign_type":"RSA2","seller_id":"2088102172237210"}');
         return app('alipay')->web([
             'out_trade_no' => $order_number, // 订单编号，需保证在商户端不重复
             'total_amount' => 100, // 订单金额，单位元，支持小数点后两位
