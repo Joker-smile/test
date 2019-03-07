@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use Carbon\Carbon;
+use Endroid\QrCode\QrCode;
 
 class PaymentController extends Controller
 {
@@ -69,11 +70,16 @@ class PaymentController extends Controller
     {
         $order_number = time();
         // scan 方法为拉起微信扫码支付
-        return app('wechat_pay')->scan([
+        $wechatOrder = app('wechat_pay')->scan([
             'out_trade_no' => $order_number,  // 商户订单流水号，与支付宝 out_trade_no 一样
             'total_fee' => 10 * 100, // 与支付宝不同，微信支付的金额单位是分。
             'body'      => '支付 Laravel Shop 的订单：'.$order_number, // 订单描述
         ]);
+
+        $qrCode = new QrCode($wechatOrder->code_url);
+
+        // 将生成的二维码图片数据以字符串形式输出，并带上相应的响应类型
+        return response($qrCode->writeString(), 200, ['Content-Type' => $qrCode->getContentType()]);
     }
 
     public function wechatNotify()
