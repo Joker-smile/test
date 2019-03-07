@@ -8,6 +8,7 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 
 class PaymentController extends Controller
 {
@@ -61,5 +62,43 @@ class PaymentController extends Controller
 //        支付宝就会每隔一段时间就发送一次服务器端回调，直到我们返回了正确的数据为准。
 
         return app('alipay')->success();
+    }
+
+
+    public function payByWechat()
+    {
+        $order_number = time();
+        // scan 方法为拉起微信扫码支付
+        return app('wechat_pay')->scan([
+            'out_trade_no' => $order_number,  // 商户订单流水号，与支付宝 out_trade_no 一样
+            'total_fee' => 10 * 100, // 与支付宝不同，微信支付的金额单位是分。
+            'body'      => '支付 Laravel Shop 的订单：'.$order_number, // 订单描述
+        ]);
+    }
+
+    public function wechatNotify()
+    {
+        // 校验回调参数是否正确
+        $data  = app('wechat_pay')->verify();
+        // 找到对应的订单
+        $order = Order::where('no', $data->out_trade_no)->first();
+        // 订单不存在则告知微信支付
+        if (!$order) {
+            return 'fail';
+        }
+        // 订单已支付
+        if ($order->paid_at) {
+            // 告知微信支付此订单已处理
+            return app('wechat_pay')->success();
+        }
+
+        // 将订单标记为已支付
+        $order->update([
+            'paid_at'        => Carbon::now(),
+            'payment_method' => 'wechat',
+            'payment_no'     => $data->transaction_id,
+        ]);
+
+        return app('wechat_pay')->success();
     }
 }
