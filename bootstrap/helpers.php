@@ -29,4 +29,7 @@ function format_money($amount)
     return number_format($amount/100 ?? 0, 2, '.', '');
 }
 
-
+function route_class()
+{
+    return str_replace('.', '-', Route::currentRouteName());
+}

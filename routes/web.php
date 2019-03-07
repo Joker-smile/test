@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index')->name('index');
 
 //支付宝支付
 Route::get('alipay', 'PaymentController@payByAlipay')->name('payment.alipay');
@@ -23,3 +21,8 @@ Route::post('payment/alipay/notify', 'PaymentController@alipayNotify')->name('pa
 //微信支付
 Route::get('payment/{order}/wechat', 'PaymentController@payByWechat')->name('payment.wechat');
 Route::post('payment/wechat/notify', 'PaymentController@wechatNotify')->name('payment.wechat.notify');
+Auth::routes();
+
+
+Auth::routes();
+
