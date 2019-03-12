@@ -1,15 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: joker
- * Date: 19-3-6
- * Time: 下午3:42
- */
 
 namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use Endroid\QrCode\QrCode;
+use GuzzleHttp\Client;
+use Illuminate\Http\Request;
 
 class PaymentController extends Controller
 {
@@ -106,5 +102,10 @@ class PaymentController extends Controller
         ]);
 
         return app('wechat_pay')->success();
+    }
+
+    public function creditCardNotify(Request $request)
+    {
+        logger($request->getContent());
     }
 }
