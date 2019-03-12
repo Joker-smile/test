@@ -13,7 +13,7 @@ class PagesController extends Controller
         $data['backUrl'] = 'https://loveinyeu.cn/payment/back/';
         $data['noticeUrl'] = 'https://loveinyeu.cn/payment/notify/';
         $data['methods'] = 'Credit Card';
-        $data['order_number'] = '20190301170117837110';
+        $data['order_number'] = '2019030117011783110';
         $data['order_currency'] = 'USD';
         $data['order_amount'] = 100;
         $data['billing_firstName'] = 'N/A';
