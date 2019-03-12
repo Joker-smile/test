@@ -22,6 +22,7 @@ Route::post('payment/alipay/notify', 'PaymentController@alipayNotify')->name('pa
 Route::get('payment/{order}/wechat', 'PaymentController@payByWechat')->name('payment.wechat');
 Route::post('payment/wechat/notify', 'PaymentController@wechatNotify')->name('payment.wechat.notify');
 Route::get('payment/notify', 'PaymentController@creditCardNotify');
+Route::get('payment/back', 'PaymentController@back');
 Auth::routes();
 
 

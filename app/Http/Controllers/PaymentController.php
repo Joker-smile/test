@@ -106,6 +106,11 @@ class PaymentController extends Controller
 
     public function creditCardNotify(Request $request)
     {
-        logger($request->getContent());
+      dd($request->all());
+    }
+
+    public function back(Request $request)
+    {
+        dd($request->all());
     }
 }

@@ -10,7 +10,7 @@ class PagesController extends Controller
     {
         $data['account'] = '191224';
         $data['terminal'] = '19122401';
-        $data['backUrl'] = 'https://baidu.com';
+        $data['backUrl'] = 'https://loveinyeu.cn/payment/back/';
         $data['noticeUrl'] = 'https://loveinyeu.cn/payment/notify/';
         $data['methods'] = 'Credit Card';
         $data['order_number'] = '20190301170117837110';
