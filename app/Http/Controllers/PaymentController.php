@@ -107,17 +107,17 @@ class PaymentController extends Controller
     public function creditCardNotify(Request $request)
     {
        $data = simplexml_load_string($request->getContent());
-       logger($data);
+       logger(get_object_vars($data));
         if($data->payment_status == 1){
-            logger($data);
+            logger('1:'.$data->order_notes);
         }
 
         if($data->payment_status == 0){
-            logger($data);
+            logger('0:'.$data->order_notes);
         }
 
         if($data->payment_status == -1){
-            logger($data);
+            logger('-1:'.$data->order_notes);
         }
        return 'receive-ok';
     }
