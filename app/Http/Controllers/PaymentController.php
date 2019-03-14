@@ -119,7 +119,7 @@ class PaymentController extends Controller
         if($data->payment_status == -1){
             logger('-1:'.$data->payment_details);
         }
-       return response()->json('receive-ok', 200);
+       return 'receive-ok';
     }
 
     public function back(Request $request)

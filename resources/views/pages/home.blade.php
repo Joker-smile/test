@@ -12,23 +12,9 @@
                 </div>
                 <div class="panel-body">
                     <form action="https://secure.oceanpayment.com/gateway/service/test" method="post" >
-                        <input type="hidden" name="account" value="{{$data['account']}}" />
-                        <input type="hidden" name="terminal" value="{{$data['terminal']}}" />
-                        <input type="hidden" name="order_number" value="{{$data['order_number']}}" />
-                        <input type="hidden" name="order_currency" value="{{$data['order_currency']}}" />
-                        <input type="hidden" name="order_amount" value="{{$data['order_amount']}}" />
-                        <input type="hidden" name="signValue" value="{{$data['signValue']}}" />
-                        <input type="hidden" name="backUrl" value="{{$data['backUrl']}}" />
-                        <input type="hidden" name="noticeUrl" value="{{$data['noticeUrl']}}" />
-                        <input type="hidden" name="billing_firstName" value="{{$data['billing_firstName']}}" />
-                        <input type="hidden" name="billing_lastName" value="{{$data['billing_lastName']}}" />
-                        <input type="hidden" name="billing_email" value="{{$data['billing_email']}}" />
-                        <input type="hidden" name="billing_phone" value="{{$data['billing_phone']}}" />
-                        <input type="hidden" name="methods" value="{{$data['methods']}}" />
-                        <input type="hidden" name="billing_country" value="{{$data['billing_country']}}" />
-                        <input type="hidden" name="billing_city" value="{{$data['billing_city']}}" />
-                        <input type="hidden" name="billing_address" value="{{$data['billing_address']}}" />
-                        <input type="hidden" name="billing_zip" value="{{$data['billing_zip']}}" />
+                        @foreach($data as $k => $v)
+                        <input type="hidden" name="{{$k}}" value="{{$v}}" />
+                        @endforeach
                         <div class="col-md-8 offset-md-4">
                             <button type="submit" class="btn btn-primary">
                                 提交
