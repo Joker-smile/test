@@ -13,14 +13,14 @@ class PagesController extends Controller
         $data['backUrl'] = 'https://loveinyeu.cn/payment/back/';
         $data['noticeUrl'] = 'https://loveinyeu.cn/payment/notify/';
         $data['methods'] = 'Credit Card';
-        $data['order_number'] = '20190108035217501556';
+        $data['order_number'] = '20190108035217501552';
         $data['order_currency'] = 'USD';
         $data['order_amount'] = 100;
         $data['billing_firstName'] = 'Li';
         $data['billing_lastName'] = 'Derek';
         $data['billing_email'] = 'zai1020733278@gmail.com';
         $data['billing_phone'] = '18659682239';
-        $data['billing_country'] = 'America';
+        $data['billing_country'] = 'US';
         $data['billing_city'] = 'Cleveland';
         $data['billing_address'] = '3980  Sunny Glen Lane';
         $data['billing_zip'] = '44115';
