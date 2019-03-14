@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class PagesController extends Controller
 {
     public function index()
@@ -13,7 +11,7 @@ class PagesController extends Controller
         $data['backUrl'] = 'https://loveinyeu.cn/payment/back/';
         $data['noticeUrl'] = 'https://loveinyeu.cn/payment/notify/';
         $data['methods'] = 'Credit Card';
-        $data['order_number'] = '20190115081630370274';
+        $data['order_number'] = '20190108071616707004';
         $data['order_currency'] = 'USD';
         $data['order_amount'] = 100;
         $data['billing_firstName'] = 'Frances L';
