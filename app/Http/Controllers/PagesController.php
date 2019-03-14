@@ -13,7 +13,7 @@ class PagesController extends Controller
         $data['backUrl'] = 'https://loveinyeu.cn/payment/back/';
         $data['noticeUrl'] = 'https://loveinyeu.cn/payment/notify/';
         $data['methods'] = 'Credit Card';
-        $data['order_number'] = '113-6803436-4939465';
+        $data['order_number'] = '113-6803436-4939466';
         $data['order_currency'] = 'USD';
         $data['order_amount'] = 100;
         $data['billing_firstName'] = 'Frances L';
@@ -34,7 +34,7 @@ class PagesController extends Controller
         $data['ship_city'] = 'Dallas';
         $data['ship_addr'] = '433 New York Avenue';
         $data['ship_zip'] = '75212';
-
+        $data['order_notes'] =24;
         return view('pages.home')->with(compact('data'));
     }
 }
