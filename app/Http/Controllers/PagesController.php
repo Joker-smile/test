@@ -22,7 +22,7 @@ class PagesController extends Controller
         $data['billing_phone'] = '18659682239';
         $data['billing_country'] = 'US';
         $data['billing_city'] = 'Cleveland';
-        $data['billing_address'] = '3980  Sunny Glen Lane';
+        $data['billing_address'] = '3980 Sunny Glen Lane';
         $data['billing_zip'] = '44115';
         $data['secureCode'] = 't4RxrL4p46l4v2Rp8Tp62460208z42TH0Z2zN8dT6p8nr2zJ2H446p6n8n8fp4bt';
         $data['signValue'] = hash("sha256",$data['account'].$data['terminal'].$data['backUrl']. $data['order_number'].$data['order_currency'].$data['order_amount'].$data['billing_firstName'].$data['billing_lastName'].$data['billing_email'].$data['secureCode']);
