@@ -106,17 +106,17 @@ class PaymentController extends Controller
 
     public function creditCardNotify(Request $request)
     {
-      $test = $request->getContent();
-      $data = simplexml_load_string($test);
-      $result = get_object_vars($data);
-      logger($result);
+       $data = simplexml_load_string($request->getContent());
+       logger($data);
+
+       return response()->json('receive-ok', 200);
     }
 
     public function back(Request $request)
     {
       $test =$request->all();
       if ($test['payment_status'] == 1){
-        return redirect('https://www.baidu.com/');
+          dd($test['payment_details']);
       }
 
       if($test['payment_status'] == 0){
