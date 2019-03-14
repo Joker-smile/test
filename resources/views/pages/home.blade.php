@@ -29,11 +29,10 @@
                         <input type="hidden" name="billing_city" value="{{$data['billing_city']}}" />
                         <input type="hidden" name="billing_address" value="{{$data['billing_address']}}" />
                         <input type="hidden" name="billing_zip" value="{{$data['billing_zip']}}" />
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    提交
-                                </button>
-                            </div>
+                        <div class="col-md-8 offset-md-4">
+                            <button type="submit" class="btn btn-primary">
+                                提交
+                            </button>
                         </div>
                     </form>
                 </div>
