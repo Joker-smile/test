@@ -106,8 +106,8 @@ class PaymentController extends Controller
 
     public function creditCardNotify(Request $request)
     {
-       $data = simplexml_load_string($request->getContent());
-       logger($data);
+//       $data = simplexml_load_string($request->getContent());
+       logger($request->getContent());
 
        return response()->json('receive-ok', 200);
     }
