@@ -109,15 +109,15 @@ class PaymentController extends Controller
        $data = simplexml_load_string($request->getContent());
        logger($data);
         if($data->payment_status == 1){
-            logger('1:'.$data);
+            logger($data);
         }
 
         if($data->payment_status == 0){
-            logger('0:'.$data);
+            logger($data);
         }
 
         if($data->payment_status == -1){
-            logger('-1:'.$data);
+            logger($data);
         }
        return 'receive-ok';
     }
