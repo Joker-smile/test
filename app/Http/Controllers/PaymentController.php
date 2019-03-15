@@ -104,6 +104,7 @@ class PaymentController extends Controller
         return app('wechat_pay')->success();
     }
 
+// 服务端通知
     public function creditCardNotify(Request $request)
     {
        $data = simplexml_load_string($request->getContent());
@@ -122,6 +123,7 @@ class PaymentController extends Controller
        return 'receive-ok';
     }
 
+    //前端返回
     public function back(Request $request)
     {
       $test =$request->all();
@@ -133,4 +135,27 @@ class PaymentController extends Controller
           dd($test);
       }
     }
+
+//对帐
+    public function reconciliation()
+    {
+        $order_number = '111-6803436-4939486';
+        $data['account'] = '191224';
+        $data['terminal'] = '19122401';
+        $secureCode = 't4RxrL4p46l4v2Rp8Tp62460208z42TH0Z2zN8dT6p8nr2zJ2H446p6n8n8fp4bt';
+        $data['signValue'] = hash("sha256",$data['account'].$data['terminal'].$order_number.$secureCode);
+        $client = new Client();
+
+        $response = $client->request('GET', 'https://query.oceanpayment.com/service/check/test', [
+            'query' => [
+                'account' => $data['account'],
+                'terminal' => $data['terminal'],
+                'signValue' => $data['signValue'],
+                'order_number' => $order_number,
+            ]
+        ]);
+
+        return $response->getBody()->getContents();
+    }
+
 }

@@ -23,8 +23,8 @@ Route::get('payment/{order}/wechat', 'PaymentController@payByWechat')->name('pay
 Route::post('payment/wechat/notify', 'PaymentController@wechatNotify')->name('payment.wechat.notify');
 Route::post('payment/notify', 'PaymentController@creditCardNotify');
 Route::post('payment/back', 'PaymentController@back');
+Route::post('payment/ocean/check', 'PaymentController@reconciliation');
+
 Auth::routes();
 
-
-Auth::routes();
 
