@@ -24,7 +24,7 @@ Route::post('payment/wechat/notify', 'PaymentController@wechatNotify')->name('pa
 
 //信用卡支付
 Route::post('payment/notify', 'PaymentController@creditCardNotify');
-Route::post('payment/back', 'PaymentController@back');
+Route::get('payment/back', 'PaymentController@back');
 Route::post('payment/ocean/check', 'PaymentController@reconciliation');
 
 //获取实时利率
