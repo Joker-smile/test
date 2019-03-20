@@ -9,14 +9,16 @@
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
+        "elasticsearch/elasticsearch": "~6.0",
         "endroid/qr-code": "^3.5",
         "fideloper/proxy": "^4.0",
+        "guzzlehttp/guzzle": "~6.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "yansongda/pay": "^2.6",
-        "guzzlehttp/guzzle": "~6.0"
+        "yansongda/pay": "^2.6"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2",
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
