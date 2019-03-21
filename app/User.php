@@ -5,10 +5,11 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Searchs\Traits\Artist as ShopSearchable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, ShopSearchable;
 
     /**
      * The attributes that are mass assignable.

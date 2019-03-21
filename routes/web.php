@@ -29,7 +29,7 @@ Route::post('payment/ocean/check', 'PaymentController@reconciliation');
 
 //获取实时利率
 Route::get('exchange/rate', 'ExchangeRateController@exchangeRate');
-
+Route::any('search', 'PlasticController@search')->name('plastic.search');
 
 Auth::routes();
 
