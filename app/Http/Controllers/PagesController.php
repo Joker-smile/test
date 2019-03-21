@@ -7,11 +7,11 @@ class PagesController extends Controller
     public function index()
     {
 
-        $secureCode = 't4RxrL4p46l4v2Rp8Tp62460208z42TH0Z2zN8dT6p8nr2zJ2H446p6n8n8fp4bt';
-        $data['account'] = '191224';
-        $data['terminal'] = '19122401';
-        $data['backUrl'] = 'https://loveinyeu.cn/payment/back/';
-        $data['noticeUrl'] = 'https://loveinyeu.cn/payment/notify/';
+        $secureCode = '*钱海提供的安全码*';
+        $data['account'] = '*钱海测试帐号*';
+        $data['terminal'] = '*钱海测试端号*';
+        $data['backUrl'] = '　*前端回调路由*';
+        $data['noticeUrl'] = '*服务端通知路由*';
         $data['methods'] = 'Credit Card';
         $data['order_number'] = '20190115081630370256';
         $data['order_currency'] = 'USD';
