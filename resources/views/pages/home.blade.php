@@ -21,8 +21,24 @@
                             </button>
                         </div>
                     </form>
+                    <div>
+                        <input id="foo" type="text" value="hello">
+                        <button class="btn" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 @endsection
+@push('js')
+    <script src="{{asset('js/clipboard.min.js')}}"></script>
+    <script>
+        var clipboard = new ClipboardJS('.btn');
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
+@endpush
