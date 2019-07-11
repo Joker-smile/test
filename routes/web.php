@@ -31,6 +31,9 @@ Route::post('payment/ocean/check', 'PaymentController@reconciliation');
 Route::get('exchange/rate', 'ExchangeRateController@exchangeRate');
 Route::any('search', 'PlasticController@search')->name('plastic.search');
 
+//spider
+Route::any('spider/images', 'SpiderController@getImages');
+
 Auth::routes();
 
 

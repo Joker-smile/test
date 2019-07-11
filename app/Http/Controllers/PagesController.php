@@ -1,19 +1,20 @@
 <?php
 
 namespace App\Http\Controllers;
+use jianyan\excel\Excel;
 
 class PagesController extends Controller
 {
     public function index()
     {
 
-        $secureCode = '*钱海提供的安全码*';
-        $data['account'] = '*钱海测试帐号*';
-        $data['terminal'] = '*钱海测试端号*';
-        $data['backUrl'] = '　*前端回调路由*';
-        $data['noticeUrl'] = '*服务端通知路由*';
+        $secureCode ='b462r46nX202Zhrz866fZd46N6x60f884B2r0p0h46H488lhj840022zB622tvtp';
+        $data['account'] ='191224';
+        $data['terminal'] ='19122402';
+        $data['backUrl'] ='https://baidu.com';
+        $data['noticeUrl'] ='http://requestbin.fullcontact.com/1ciii2l1';
         $data['methods'] = 'Credit Card';
-        $data['order_number'] = '20190115081630370256';
+        $data['order_number'] = '20190115081630370256644';
         $data['order_currency'] = 'USD';
         $data['order_amount'] = 100;
         $data['billing_firstName'] = 'Frances L';
