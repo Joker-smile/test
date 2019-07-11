@@ -8,3 +8,4 @@
 ##### 4.获取实时利率
 ##### 5.elasticsearch 实现用户搜索
 ##### 6.clipboard 插件实现点击copy,cut
+##### 7.xethron/migrations-generator 整理laravel migration 文件的包
