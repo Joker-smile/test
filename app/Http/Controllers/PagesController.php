@@ -12,9 +12,9 @@ class PagesController extends Controller
         $data['account'] ='191224';
         $data['terminal'] ='19122402';
         $data['backUrl'] ='https://baidu.com';
-        $data['noticeUrl'] ='http://requestbin.fullcontact.com/1ciii2l1';
+        $data['noticeUrl'] ='http://requestbin.fullcontact.com/1mbu77c1';
         $data['methods'] = 'Credit Card';
-        $data['order_number'] = '20190115081630370256644';
+        $data['order_number'] = '2019011508163037025665d';
         $data['order_currency'] = 'USD';
         $data['order_amount'] = 100;
         $data['billing_firstName'] = 'Frances L';

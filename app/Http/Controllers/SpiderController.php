@@ -8,12 +8,28 @@
 
 namespace App\Http\Controllers;
 
-use QL\QueryList;
+use Mohuishou\ImageOCR\Image;
 
 class SpiderController extends Controller
 {
     public function getImages()
     {
-        return QueryList::get('https://www.forudesigns.com/')->find('li<img')->attrs('src');
+        $image=new Image($img_path);
+        $image_ocr=new ImageOCR($image);
+        $image_ocr->setStandardWidth(13);
+        $image_ocr->setStandardHeight(20);
+        $image_ocr->setDebug(true);
+
+        try{
+            $image_ocr->grey();
+        }catch (\Exception $e){
+            echo $e->getMessage();
+        }
+
+        try{
+            $image_ocr->hash($max_grey=null,$min_grey=null);
+        }catch (\Exception $e){
+            echo $e->getMessage();
+        }
     }
 }

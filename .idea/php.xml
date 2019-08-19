@@ -108,14 +108,6 @@
       <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
       <path value="$PROJECT_DIR$/vendor/jianyan74/php-excel" />
       <path value="$PROJECT_DIR$/vendor/symfony/mime" />
-      <path value="$PROJECT_DIR$/vendor/tightenco/collect" />
-      <path value="$PROJECT_DIR$/vendor/jaeger/querylist" />
-      <path value="$PROJECT_DIR$/vendor/jaeger/phpquery-single" />
-      <path value="$PROJECT_DIR$/vendor/jaeger/g-http" />
-      <path value="$PROJECT_DIR$/vendor/cache/filesystem-adapter" />
-      <path value="$PROJECT_DIR$/vendor/cache/adapter-common" />
-      <path value="$PROJECT_DIR$/vendor/cache/tag-interop" />
-      <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
@@ -126,6 +118,14 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/mohuishou/image-ocr" />
+      <path value="$PROJECT_DIR$/vendor/queue-interop/amqp-interop" />
+      <path value="$PROJECT_DIR$/vendor/vladimir-yuldashev/laravel-queue-rabbitmq" />
+      <path value="$PROJECT_DIR$/vendor/php-amqplib/php-amqplib" />
+      <path value="$PROJECT_DIR$/vendor/queue-interop/queue-interop" />
+      <path value="$PROJECT_DIR$/vendor/enqueue/amqp-lib" />
+      <path value="$PROJECT_DIR$/vendor/enqueue/amqp-tools" />
+      <path value="$PROJECT_DIR$/vendor/enqueue/dsn" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
