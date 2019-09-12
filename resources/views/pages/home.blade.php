@@ -1,44 +1,32 @@
-@extends('layouts.app')
-@section('title', '新增收货地址')
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试pdf</title>
 
-@section('content')
-    <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h2 class="text-center">
-                        新增收货地址
-                    </h2>
-                </div>
-                <div class="panel-body">
-                    <form action="https://secure.oceanpayment.com/gateway/service/test" method="post" >
-                        @foreach($data as $k => $v)
-                        <input type="hidden" name="{{$k}}" value="{{$v}}" />
-                        @endforeach
-                        <div class="col-md-8 offset-md-4">
-                            <button type="submit" class="btn btn-primary">
-                                提交
-                            </button>
-                        </div>
-                    </form>
-                    <div>
-                        <input id="foo" type="text" value="hello">
-                        <button class="btn" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <style>
+        @font-face {
+            font-family: 'msyh';
+            font-style: normal;
+            font-weight: normal;
+            src: url(http://test.com/fonts/msyh.ttf) format('truetype');
+        }
+        html, body {  height: 100%;  }
+        body {  margin: 0;  padding: 0;  width: 100%;
+            /*display: table;  */
+            font-weight: 100;  font-family: 'msyh';  }
+        .container {  text-align: center;
+            /*display: table-cell; */
+            vertical-align: middle;  }
+        .content {  text-align: center;  display: inline-block;  }
+        .title {  font-size: 96px;  }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div class="title">xiao测试</div>
+        <img src="https://samples.forucdn.com/129/DD-B-1-20181210093821-fYpn5zPV.jpg" alt="" style="height: 100px;width: 100px">
     </div>
-@endsection
-@push('js')
-    <script src="{{asset('js/clipboard.min.js')}}"></script>
-    <script>
-        var clipboard = new ClipboardJS('.btn');
-        clipboard.on('success', function(e) {
-            console.log(e);
-        });
-        clipboard.on('error', function(e) {
-            console.log(e);
-        });
-    </script>
-@endpush
+</div>
+</body>
+</html>

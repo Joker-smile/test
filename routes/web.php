@@ -36,4 +36,4 @@ Route::any('spider/images', 'SpiderController@getImages');
 
 Auth::routes();
 
-
+Route::get('create/pdf', 'DomPdfController@createPdf');
