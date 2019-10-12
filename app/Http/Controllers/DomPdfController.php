@@ -23,6 +23,7 @@ class DomPdfController extends Controller
         $data['billing_email']     = 'zai1020733278@gmail.com';
         $data['billing_phone']     = '817-982-3149';
         $data['billing_country']   = 'US';
+
         $data['billing_state']     = 'texas';
         $data['billing_city']      = 'Dallas';
         $data['billing_address']   = '433 New York Avenue';
