@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a08fab73-5fd0-4977-947a-6a7178e7be22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DomPdfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DomPdfController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +62,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="JBGKHEwH" />
+    <option name="directoryName" value="kbwjcIAr" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -344,7 +345,8 @@
       <workItem from="1570496122730" duration="599000" />
       <workItem from="1570603256068" duration="2107000" />
       <workItem from="1570695475623" duration="677000" />
-      <workItem from="1570777686075" duration="5458000" />
+      <workItem from="1570777686075" duration="7428000" />
+      <workItem from="1571035048631" duration="29000" />
     </task>
     <servers />
   </component>

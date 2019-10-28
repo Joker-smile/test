@@ -23,7 +23,8 @@
         "mohuishou/image-ocr": "^0.1.2",
         "vladimir-yuldashev/laravel-queue-rabbitmq": "^8.2",
         "yansongda/pay": "^2.6",
-        "sentry/sentry-laravel":"1.1.0"
+        "sentry/sentry-laravel":"1.1.0",
+        "automattic/woocommerce": "3.0.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
