@@ -23,5 +23,6 @@ class VerifyCsrfToken extends Middleware
         'payment/wechat/notify',
         'payment/notify',
         'payment/*',
+        'woocommerce/notify',
     ];
 }
