@@ -27,7 +27,7 @@ class WeChatController extends Controller
 
     public function profile()
     {
-        $userinfo = session('wechat_user'); // 拿到授权用户资料
+        $userinfo = session('wechat.oauth_user'); // 拿到授权用户资料
         dd($userinfo);
     }
 }
