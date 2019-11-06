@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a08fab73-5fd0-4977-947a-6a7178e7be22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_08_091957_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WeChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WeChatController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -267,7 +269,8 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zhuxian-backend" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/overtrue/laravel-wechat/src/Middleware/OAuthAuthenticate.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -275,19 +278,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/fonts" />
-      <recent name="$PROJECT_DIR$/storage/fonts" />
-      <recent name="$PROJECT_DIR$/app/Http/Resources" />
-      <recent name="$PROJECT_DIR$/app/Http" />
-      <recent name="$PROJECT_DIR$/config" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/storage/fonts" />
       <recent name="$PROJECT_DIR$/storage" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/resources/js/assets" />
       <recent name="$PROJECT_DIR$/resources/js/components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database/migrations" />
+      <recent name="$PROJECT_DIR$/app/Models" />
+      <recent name="$PROJECT_DIR$/public/fonts" />
+      <recent name="$PROJECT_DIR$/storage/fonts" />
+      <recent name="$PROJECT_DIR$/app/Http/Resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -355,7 +358,7 @@
       <workItem from="1571035048631" duration="29000" />
       <workItem from="1572570169631" duration="649000" />
       <workItem from="1572574268339" duration="599000" />
-      <workItem from="1572922113791" duration="9005000" />
+      <workItem from="1572922113791" duration="12771000" />
     </task>
     <servers />
   </component>
