@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a08fab73-5fd0-4977-947a-6a7178e7be22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_07_08_091957_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AetherUploadCORS.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/aetherupload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/aetherupload/js/aetherupload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/aetherupload/js/spark-md5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/vendor/aetherupload/en/messages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/vendor/aetherupload/zh/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -259,6 +267,7 @@
       <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
       <path value="$PROJECT_DIR$/vendor/automattic/woocommerce" />
       <path value="$PROJECT_DIR$/vendor/easywechat-composer/easywechat-composer" />
+      <path value="$PROJECT_DIR$/vendor/peinhu/aetherupload-laravel" />
     </include_path>
   </component>
   <component name="ProjectId" id="1R0COkDBYUav5ckLDEMkgdwClQN" />
@@ -270,7 +279,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/overtrue/laravel-wechat/src/Middleware/OAuthAuthenticate.php" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../foru" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -358,7 +367,7 @@
       <workItem from="1571035048631" duration="29000" />
       <workItem from="1572570169631" duration="649000" />
       <workItem from="1572574268339" duration="599000" />
-      <workItem from="1572922113791" duration="12771000" />
+      <workItem from="1572922113791" duration="19676000" />
     </task>
     <servers />
   </component>

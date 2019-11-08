@@ -9,7 +9,7 @@ class PagesController extends Controller
 {
     public function index()
     {
-        return view('index');
+        return 'Hello world!';
     }
 
     public function getRequest(Request $request)

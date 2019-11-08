@@ -194,6 +194,7 @@
       <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
       <path value="$PROJECT_DIR$/vendor/automattic/woocommerce" />
       <path value="$PROJECT_DIR$/vendor/easywechat-composer/easywechat-composer" />
+      <path value="$PROJECT_DIR$/vendor/peinhu/aetherupload-laravel" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

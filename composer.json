@@ -23,6 +23,7 @@
         "laravel/tinker": "^1.0",
         "mohuishou/image-ocr": "^0.1.2",
         "overtrue/laravel-wechat": "~5.0",
+        "peinhu/aetherupload-laravel": "~2.0",
         "sentry/sentry-laravel": "1.1.0",
         "vladimir-yuldashev/laravel-queue-rabbitmq": "^8.2",
         "yansongda/pay": "^2.6"
