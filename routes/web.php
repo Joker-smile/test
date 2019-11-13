@@ -17,7 +17,6 @@ Route::get('', 'PagesController@index')->name('index');
 Route::get('alipay', 'PaymentController@payByAlipay')->name('payment.alipay');
 Route::get('payment/alipay/return', 'PaymentController@alipayReturn')->name('payment.alipay.return');
 Route::post('payment/alipay/notify', 'PaymentController@alipayNotify')->name('payment.alipay.notify');
-Route::post('woocommerce/notify', 'PagesController@getRequest');
 
 
 //微信支付
