@@ -14,7 +14,8 @@ class PagesController extends Controller
 
     public function getRequest(Request $request)
     {
-        Log::info($request->getContent());
+//        Log::info($request->getContent());
         Log::info($request->get('store'));
+        Log::info(json_decode($request->getContent()));
     }
 }
