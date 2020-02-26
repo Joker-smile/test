@@ -40,7 +40,7 @@ class PagesController extends Controller
     {
         try {
             // 实例化一个证书对象，入参需要传入腾讯云账户secretId，secretKey
-            $cred = new Credential("AKIDd4A1lQi1xhCZibwfKoAOQRE2dDoHGWKs", "aVBnUzINC8zf7JQM5gv53sUs272WlkVt");
+            $cred = new Credential("", "");
 
             // # 实例化要请求产品(以cvm为例)的client对象
             $client = new CvmClient($cred, "ap-guangzhou");
