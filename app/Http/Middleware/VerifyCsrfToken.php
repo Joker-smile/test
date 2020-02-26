@@ -24,6 +24,7 @@ class VerifyCsrfToken extends Middleware
         'payment/notify',
         'payment/*',
         'woocommerce/notify',
-        'api/*'
+        'api/*',
+        'test'
     ];
 }

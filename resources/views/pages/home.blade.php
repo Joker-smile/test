@@ -1,32 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>测试pdf</title>
+@extends('layouts.app')
+@section('title', '新增收货地址')
 
-    <style>
-        @font-face {
-            font-family: 'msyh';
-            font-style: normal;
-            font-weight: normal;
-            src: url(http://test.com/fonts/msyh.ttf) format('truetype');
-        }
-        html, body {  height: 100%;  }
-        body {  margin: 0;  padding: 0;  width: 100%;
-            /*display: table;  */
-            font-weight: 100;  font-family: 'msyh';  }
-        .container {  text-align: center;
-            /*display: table-cell; */
-            vertical-align: middle;  }
-        .content {  text-align: center;  display: inline-block;  }
-        .title {  font-size: 96px;  }
-    </style>
-</head>
-<body>
-<div class="container">
-    <div class="content">
-        <div class="title">xiao测试</div>
-        <img src="https://samples.forucdn.com/129/DD-B-1-20181210093821-fYpn5zPV.jpg" alt="" style="height: 100px;width: 100px">
+@section('content')
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="text-center">
+                        新增收货地址
+                    </h2>
+                </div>
+                <div class="panel-body">
+                    <form action="https://secure.oceanpayment.com/gateway/service/test" method="post" >
+                        <input type="hidden" name="account" value="{{$data['account']}}" />
+                        <input type="hidden" name="terminal" value="{{$data['terminal']}}" />
+                        <input type="hidden" name="order_number" value="{{$data['order_number']}}" />
+                        <input type="hidden" name="order_currency" value="{{$data['order_currency']}}" />
+                        <input type="hidden" name="order_amount" value="{{$data['order_amount']}}" />
+                        <input type="hidden" name="signValue" value="{{$data['signValue']}}" />
+                        <input type="hidden" name="backUrl" value="{{$data['backUrl']}}" />
+                        <input type="hidden" name="noticeUrl" value="{{$data['noticeUrl']}}" />
+                        <input type="hidden" name="billing_firstName" value="{{$data['billing_firstName']}}" />
+                        <input type="hidden" name="billing_lastName" value="{{$data['billing_lastName']}}" />
+                        <input type="hidden" name="billing_email" value="{{$data['billing_email']}}" />
+                        <input type="hidden" name="billing_phone" value="{{$data['billing_phone']}}" />
+                        <input type="hidden" name="methods" value="{{$data['methods']}}" />
+                        <input type="hidden" name="billing_country" value="{{$data['billing_country']}}" />
+                        <input type="hidden" name="billing_city" value="{{$data['billing_city']}}" />
+                        <input type="hidden" name="billing_address" value="{{$data['billing_address']}}" />
+                        <input type="hidden" name="billing_zip" value="{{$data['billing_zip']}}" />
+                        <div class="col-md-8 offset-md-4">
+                            <button type="submit" class="btn btn-primary">
+                                提交
+                            </button>
+                        </div>
+                </form>
+            </div>
+        </div>
     </div>
-</div>
-</body>
-</html>
+    </div>
+@endsection

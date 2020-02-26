@@ -21,10 +21,12 @@
         "jianyan74/php-excel": "^1.0",
         "laravel/framework": "v5.8.9",
         "laravel/tinker": "^1.0",
+        "minchao/shopee-php": "^0.0.7",
         "mohuishou/image-ocr": "^0.1.2",
         "overtrue/laravel-wechat": "~5.0",
         "peinhu/aetherupload-laravel": "~2.0",
         "sentry/sentry-laravel": "1.1.0",
+        "tencentcloud/tencentcloud-sdk-php": "^3.0",
         "vladimir-yuldashev/laravel-queue-rabbitmq": "^8.2",
         "yansongda/pay": "^2.6"
     },
