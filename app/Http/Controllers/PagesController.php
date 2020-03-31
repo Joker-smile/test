@@ -19,8 +19,8 @@ class PagesController extends Controller
         $data['backUrl']           = 'https://loveinyeu.cn/payment/back/';
         $data['noticeUrl']         = 'https://en94i3utw52dn.x.pipedream.net';
         $data['methods']           = 'Credit Card';
-        $data['order_number']      = '201903011701178310';
-        $data['order_currency']    = 'USD';
+        $data['order_number']      = '2019030117011783850';
+        $data['order_currency']    = 'EUR';
         $data['order_amount']      = 100;
         $data['billing_firstName'] = 'Li';
         $data['billing_lastName']  = 'Derek';
