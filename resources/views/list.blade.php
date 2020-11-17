@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>swoole首页</title>
+    <title>swoole列表页</title>
     <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 </head>
 <body>
-<h1>这是首页</h1>
+<h1>swoole列表页</h1>
 </body>
 <script>
     var ws;//websocket实例
     var lockReconnect = false;//避免重复连接
-    var wsUrl = 'ws://192.168.33.10:9401?page=home&token=123456';
+    var wsUrl = 'ws://192.168.33.10:9401?page=list&token=123456';
 
     function initEventHandle() {
         ws.onclose = function () {

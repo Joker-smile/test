@@ -39,7 +39,10 @@ Auth::routes();
 
 Route::get('create/pdf', 'DomPdfController@createPdf');
 
-Route::any('/wechat', 'WeChatController@serve');
+Route::get('/wechat', 'WeChatController@serve');
+Route::get('/home', 'TestController@home')->name('home');
+Route::get('/list', 'TestController@list')->name('list');
+Route::any('/back', 'TestController@back')->name('back');
 
 Route::group(['middleware' => ['wechat.oauth']], function () {
     Route::get('user/profile', 'WeChatController@profile')->name('user.profile');

@@ -4,6 +4,7 @@
 namespace App\Http\Controllers;
 
 
+use EasyWeChat\Factory;
 use Illuminate\Support\Facades\Log;
 
 class WeChatController extends Controller
@@ -18,10 +19,9 @@ class WeChatController extends Controller
         Log::info('request arrived.');
 
         $app         = app('wechat.official_account');
-        $accessToken = $app->access_token;
-        $token       = $accessToken->getToken(); // token 数组  token['access_token'] 字符串
+        $response = $app->server->serve();
 
-        return $token;
+        return $response;
     }
 
     public function profile()
