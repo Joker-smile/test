@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a08fab73-5fd0-4977-947a-6a7178e7be22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/SwooleDemo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/back.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Swoole.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WeChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WeChatController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/wechat.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/wechat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/SwooleDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/SwooleDemo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/list.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,12 +287,16 @@
       <recent name="$PROJECT_DIR$/app/Http/Resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.home.blade.php (1)">
+    <configuration name="home.blade.php (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/test/resources/views/home.blade.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="home.blade.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/test/resources/views/pages/home.blade.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.home.blade.php (1)" />
         <item itemvalue="JavaScript Debug.home.blade.php" />
       </list>
     </recent_temporary>
@@ -380,7 +378,10 @@
       <workItem from="1594723889009" duration="2451000" />
       <workItem from="1594780503508" duration="16000" />
       <workItem from="1604908903894" duration="32000" />
-      <workItem from="1605518661324" duration="3881000" />
+      <workItem from="1605518661324" duration="9591000" />
+      <workItem from="1605602221378" duration="553000" />
+      <workItem from="1605660418138" duration="3327000" />
+      <workItem from="1614044674869" duration="3556000" />
     </task>
     <servers />
   </component>
@@ -403,17 +404,45 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="426" y="133" key="NewPhpClassDialog" timestamp="1605518809534">
+    <state x="392" y="155" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605579439212">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="426" y="133" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1605518809534" />
+    <state x="392" y="155" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605579439212" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1614046276698">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1614046276698" />
+    <state width="1388" height="232" key="GridCell.Tab.0.bottom" timestamp="1614046250999">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1388" height="232" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614046250999" />
+    <state width="1388" height="232" key="GridCell.Tab.0.center" timestamp="1614046250998">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1388" height="232" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1614046250998" />
+    <state width="1388" height="232" key="GridCell.Tab.0.left" timestamp="1614046250998">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1388" height="232" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1614046250998" />
+    <state width="1388" height="232" key="GridCell.Tab.0.right" timestamp="1614046250999">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1388" height="232" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1614046250999" />
+    <state x="426" y="133" key="NewPhpClassDialog" timestamp="1614044701875">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="426" y="133" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1614044701875" />
     <state x="519" y="452" key="NewPhpFileDialog" timestamp="1605518872624">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="519" y="452" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1605518872624" />
-    <state x="347" y="163" width="746" height="574" key="find.popup" timestamp="1605575049540">
+    <state x="550" y="84" key="VCS.ChangeListViewerDialog" timestamp="1614046242009">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="347" y="163" width="746" height="574" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1605575049540" />
+    <state x="550" y="84" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1614046242009" />
+    <state x="347" y="163" width="746" height="574" key="find.popup" timestamp="1605669299456">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="347" y="163" width="746" height="574" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1605669299456" />
   </component>
 </project>

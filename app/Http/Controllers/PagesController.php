@@ -33,7 +33,7 @@ class PagesController extends Controller
         $data['secureCode']        = 'b462r46nX202Zhrz866fZd46N6x60f884B2r0p0h46H488lhj840022zB622tvtp';
         $data['signValue']         = hash("sha256", $data['account'] . $data['terminal'] . $data['backUrl'] . $data['order_number'] . $data['order_currency'] . $data['order_amount'] . $data['billing_firstName'] . $data['billing_lastName'] . $data['billing_email'] . $data['secureCode']);
 
-        return view('pages.home')->with(compact('data'));
+        return view('home')->with(compact('data'));
     }
 
     public function getRequest(Request $request)
